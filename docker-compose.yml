@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mysqldb: 
+    image: mysql
+    environment:
+      - MYSQL_USER=superoot     # warning user is superoot 
+      - MYSQL_ROOT_PASSWORD=12345 # warning password is 1234 
+      - MYSQL_DATABASE=api-graphql # warning database is api-graphql
+    ports:
+      - 3307:3306    # port of connection is 3307 
